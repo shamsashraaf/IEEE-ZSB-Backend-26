@@ -6,7 +6,7 @@
 
 **there are things we need to handle to reach our goal**
  
-- [final answe if you wanna skip :)](#now-the-tables-after-the-3nf-is-)
+- [Final Answer if you wanna skip :)](#now-the-tables-after-the-3nf-is-)
 
 ### in our task: 
   we have a messy Excel sheet (that's sound like a very not good schema) called `Legacy_data` containing this table :
