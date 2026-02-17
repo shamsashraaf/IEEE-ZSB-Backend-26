@@ -2,7 +2,7 @@
 
 #### Why did they first thought of Normalization :
 
-> to help achiving the goal that our relaltional schema is a good relational schema
+> it helps achiving the goal that our relaltional schema is a good relational schema
 
 **there are things we need to handle to reach our goal**
  
