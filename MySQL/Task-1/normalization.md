@@ -117,4 +117,4 @@ we will make a new table for the dept_building and the instructor_dept and the *
 
          (Instructor_Dept, Dept_Building)
 
-So finally we have a good schema in the Third Normal Form           
+So finally we have a good schema in the Third Normal Form   **Mission Completed**        
