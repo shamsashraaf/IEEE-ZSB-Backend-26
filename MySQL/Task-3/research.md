@@ -35,7 +35,8 @@ HAVING COUNT(*) > 5;
 - This groups employees by department, then filters departments that have more than 5 employees
 
 
-## 2- DELETE VS TRUNCATE VS DROP :
+
+## 2- DELETE vS TRUNCATE vS DROP :
 
 |Delete|Truncate|Drop|
 |:------|:------|:------|
@@ -43,35 +44,53 @@ HAVING COUNT(*) > 5;
 |**can** use `WHERE`|**can't** use `WHERE`|**can't** use `WHERE`|
 |**can be** `rolled back` |**can't** be `rolled back` |**can't** be `rolled back`|
 
-**DELETE** :
 
-Code Ex :
+## 3- Order of Execution :
 
-```SQL
-DELETE FROM Employees
-WHERE Salary < 3000;
-```
-- Deletes selected rows.
-- Can be undone .
+The database does not read a **SELECT** query in the order you write it.
 
-**TRUNCATE** :
+**Logical order** of execution :
 
-Code Ex :
+- **FROM** → Get the table(s)
+- **WHERE** → Filter rows
+- **GROUP BY** → Group rows
+- **HAVING** → Filter groups
+- **SELECT** → Choose columns
+- **ORDER BY** → Sort final result
 
-```SQL
-TRUNCATE TABLE Employees;
-```
-- Deletes all rows quickly.
-- Cannot use WHERE.
-- Usually cannot be rolled back.
 
-**DROP** :
+## 4- COUNT(*) vs COUNT(Column_Name) :
 
-Code Ex :
+#### COUNT(*) :
+   - Counts all rows.
+   - Includes rows even if there are **NULL values**.
+   - Does NOT care about column values.
 
-```SQL
-DROP TABLE Employees;
-```
-- Deletes the whole table (data + structure).
-- Cannot be undone.
+#### COUNT(Column_Name):
+   - Counts only rows where the column is **NOT NULL**.
+   - Ignores **NULL** values in that column.
 
+
+## 5- CHAR(10) vs VARCHAR(10) :
+
+- Both can store up to **10 characters**, but they handle **storage** differently.
+
+#### CHAR(10) :
+
+- Fixed length.
+- Always uses 10 characters, even if the word is **shorter**.
+ - If we store "Cat", it becomes:
+
+         "Cat       "
+
+    - Uses full 10 characters (3 letters + 7 spaces) .
+
+#### VARCHAR(10) :
+
+- Variable length.
+- Stores only the actual characters.
+- If we store "Cat", it stays:
+ 
+        "Cat"
+    
+    - Uses only 3 characters (plus small extra storage for length).
