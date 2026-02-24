@@ -31,10 +31,25 @@
          > this takes extra `time` and `memory`
 
     - **UNION ALL** : `Faster` 
-        
+
        it just **merges** the results 
 
          - NO extra processing
         - NO duplicate checking 
 
-        > better performance especially with `large` datasets   
+        > better performance especially with `large` datasets 
+          
+---
+### 2- Subquery vs JOIN 
+
+**subquery** : is a query within a query used to provide a value for the outer query
+**JOIN** : combines rows from multiple tables based on related columns
+
+**Why choose JOIN instead of Subquery in production?**
+
+- Better performance (especially with large data) `JOINS are usually faster`
+- Optimized better by the database engine
+- More scalable `Works better with large datasets`
+- Avoids slow correlated subqueries (which run once per row)
+
+> In real production systems with large data,**JOIN** is generally more **efficient** and **reliable**.
