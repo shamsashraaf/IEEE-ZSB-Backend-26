@@ -42,8 +42,9 @@
 ---
 ### 2- Subquery vs JOIN 
 
-**subquery** : is a query within a query used to provide a value for the outer query
-**JOIN** : combines rows from multiple tables based on related columns
+**subquery** : is a query within a query used to provide a value for the outer query.
+
+**JOIN** : combines rows from multiple tables based on related columns.
 
 **Why choose JOIN instead of Subquery in production?**
 
