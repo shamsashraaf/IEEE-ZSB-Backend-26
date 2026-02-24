@@ -2,7 +2,7 @@
 
 ### 1- UNION vs UNION ALL
 
-- Duplicate Handling :
+ - Duplicate Handling :
 
     - **UNION** :
        -  Combines result sets
@@ -19,3 +19,22 @@
        
         > If the same name appears in both tables :- 
         it will appear twice in the final result
+
+- Performance Difference :
+
+    - **UNION** : `Slower`
+
+      After combining results the database :
+         - Sort date
+         - Check for duplicates
+         - Remove duplicates
+         > this takes extra `time` and `memory`
+
+    - **UNION ALL** : `Faster` 
+        
+       it just **merges** the results 
+
+         - NO extra processing
+        - NO duplicate checking 
+
+        > better performance especially with `large` datasets   
