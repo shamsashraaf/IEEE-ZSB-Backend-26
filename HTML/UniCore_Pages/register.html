@@ -5,19 +5,43 @@
     <meta name="description" content="the signup form">
     <title>UniCore</title>
     <style>
-        
+        body{
+            text-align: center;
+            background:  rgba(214, 168, 215, 0.33);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
         h1{
-            color: rgb(209, 118, 191);
+            text-align: center;
+            color: rgb(0, 0, 0);
+
         }
         a{
             text-decoration: none;
         }
+        a:hover{
+            text-decoration: underline;
+        }
+        .n,.e,.p,.d,.g{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        
         .t{ 
            display: block;
            margin-left: auto;
            margin-right: auto;
         }
-
+        button{
+            background-color: gold;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            
+        }
+        button:hover{
+           background-color: rgb(223, 192, 11);
+        }
         
     </style>
     </head>
@@ -25,16 +49,16 @@
         <h1>Signup Form</h1>
         <form >
             <label for="name">Name : </label>
-            <br><input type="text" placeholder="enter your full name"><br><br>
+            <br><input type="text" placeholder="enter your full name" class="n"><br><br>
             <label for="email">Email : </label>
-            <br><input type="email" placeholder="email" ><br><br>
+            <br><input type="email" placeholder="email" class="e"><br><br>
             <label for="password">Password : </label>
-            <br><input type="password" placeholder="make a strong password"><br><br>
+            <br><input type="password" placeholder="make a strong password" class="p"><br><br>
 
             <label for="dateofbirth">Date Of Birth :</label><br>
-            <input type="date"><br><br>
+            <input type="date" class="d"><br><br>
             <label for="department"> Choose your Department : </label>
-            <select name="department" >
+            <select name="department" class="g">
                 <option>Gryffindor</option>
                 <option>Slytherin</option>
                 <option>Hufflepuff</option>
@@ -44,7 +68,7 @@
             <label for="gender">Female</label>
             <input type="radio" name="a" id="">
             <label for="gender">Male</label>
-            <input type="radio" name="a" id="">
+            <input type="radio" name="a" id=""><br><br>
 <button class="t">Register</button>
         </form>
         

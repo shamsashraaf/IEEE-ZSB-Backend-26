@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Admin</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background:  rgba(214, 168, 215, 0.33);
+            padding: 20px;
+           
+
+        }   
+        h1{
+            text-align: center;
+        }
+        address{
+            margin: 20px auto;
+            background-color:rgba(189, 89, 154, 0.802) ;
+            color: aliceblue;
+            padding: 20px;
+            border-radius: 5px;
+
+
+        }
+        a{
+            color: #369dcc;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        form{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+        }
+        textarea{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            resize: vertical;
+            min-height: 100px;
+            margin-bottom:15px ;
+
+        }
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffd700;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #b9aa65;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <h1>Contact Admin</h1>
+
+    <section>
+        <h2>University Location</h2>
+        <address>
+            Unicore University<br>
+            9/3 platform <br>scottish Highlands, United Kingdom
+        </address>
+    </section>
+
+    <section>
+        <h2>Send Email</h2>
+        <p>
+            You can email the admin : 
+            <a href="mailto:admin@unicore.fake">admin@unicore.fake</a>
+        </p>
+    </section>
+
+    
+    <section>
+        <h2>Feedback</h2>
+        <form>
+            <label for="feedback">Your Feedback:</label> <br>
+            <textarea id="feedback" name="feedback" placeholder="Write your message here..."></textarea>
+            <button type="submit">Send Feedback</button>
+        </form>
+    </section>
+
+</body>
+</html>

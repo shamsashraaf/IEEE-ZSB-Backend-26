@@ -5,22 +5,45 @@
         <meta name = "description" content="frontend Skeleton" />
         <title>Uni Core</title>
         <style>
+            body{
+                
+            background:  rgba(214, 168, 215, 0.33);
+            }
          h1{display: block;
             background-color:rgba(238, 159, 200, 0.804) ;
             color: rgb(255, 255, 255);
             font-family:Georgia, 'Times New Roman', Times, serif ;
          }
-         
+         th,td{
+           
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px ;
+
+         }
+         th{
+
+            background-color: rgba(145, 36, 138, 0.596);
+         }
          table{
+           
+            border-radius: 5px;
             background-color: rgba(221, 37, 212, 0.144);
+            border-collapse: collapse;
+            text-align: center;
             
          }
-        .t{
+
+        
+        /* .t{
             text-align: center;
-        }
+        } */
          ul a{
             text-decoration: none;
-            color: rgb(218, 22, 84);
+            color: rgb(81, 22, 218);
+         }
+         a:hover{
+            text-decoration: underline;
          }
 
         </style>
@@ -39,7 +62,7 @@
     <section>
         <h2 class ="t" >Weekly Class Schedule</h2>
         
-        <table border="1" cellpadding="5">
+        <table>
             <thead>
                 <tr>
                     <th>Time</th>
