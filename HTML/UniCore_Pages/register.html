@@ -5,6 +5,9 @@
     <meta name="description" content="the signup form">
     <title>UniCore</title>
     <style>
+        body{
+            background-color: ;
+        }
         h1{
             color: rgb(209, 118, 191);
         }
@@ -23,17 +26,20 @@
     <body>
         <h1>Signup Form</h1>
         <form >
-            <p>Name : <br><input type="text" placeholder="enter your full name"></p>
-            
-            <p>Email : <br><input type="email" placeholder="email" ><br></p>
-            <p>Password : <br><input type="password" placeholder="make a strong password"></p>
+            <label for="name">Name : </label>
+            <br><input type="text" placeholder="enter your full name"><br><br>
+            <label for="email">Email : </label>
+            <br><input type="email" placeholder="email" ><br><br>
+            <label for="password">Password : </label>
+            <br><input type="password" placeholder="make a strong password"><br><br>
+
             <label for="department"> Choose your Department : </label>
             <select name="department" >
                 <option>Gryffindor</option>
                 <option>Slytherin</option>
                 <option>Hufflepuff</option>
                 <option>Ravenclaw</option>
-            </select><br>
+            </select><br><br>
 <button class="t">Register</button>
         </form>
         
